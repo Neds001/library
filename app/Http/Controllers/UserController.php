@@ -10,16 +10,7 @@ class UserController extends Controller
     public function index(){
         $data = User::all();
         return view('user.index',['users'=>$data]);
+        //user.index [user => folder name , index => file name] on views
     }
-
-    /*public function show($id){
-        $data=array(
-            "id"=>$id,
-            "name"=>"Neds Mamitag",
-            "age"=>21,
-            "email"=>"mamitag09@gmail.com"
-             );
-             return view('user', $data);
-    }*/
 
 }
